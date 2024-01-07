@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <script src="moment.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body onload="welcome()">
+    <main class="phone">
+        <div class="circle"></div>
+        <div class="menu-bar">
+            <p id="time">0:00</p>
+            <div>
+                <img class="icon-signal" src="./img/dark/signal.png">
+                <img class="icon-wifi" src="./img/dark/wifi.png">
+                <img class="icon-battery" src="./img/dark/battery.png">
+            </div>
+        </div>
+        <div class="main-section">
+            <h1 class="welcome_text">Weather App</h1>
+            <p class="city-name">--</p>
+            <p class="weather-state">--</p>
+            <img class="weather-icon" src="https://openweathermap.org/img/wn/10d@2x.png">
+            <p class="temperature">--</p>
+        </div>
+        <div class="interact-action">
+            <div class="form-feild">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input id="search-input" type="text" placeholder="Search...">
+            </div>
+            <div class="information">
+                <div class="weather-information">
+                    <h1>Morning</h1>
+                    <p class="space-time">9:00 AM</p>
+                    <img src="https://img.icons8.com/?size=48&id=OFU5h8HeWK3z&format=png">
+                    <div class="temp morn">--</div>
+                </div>
+                <div class="weather-information">
+                    <h1>Afternoon</h1>
+                    <p class="space-time">15:00 PM</p>
+                    <img src="https://img.icons8.com/?size=48&id=cWfpk9mCJWJm&format=png">
+                    <div class="temp after">--</div>
+                </div>
+                <div class="weather-information">
+                    <h1>Evening</h1>
+                    <p class="space-time">21:00 PM</p>
+                    <img src="https://img.icons8.com/?size=48&id=MVj2tmasj0Pp&format=png">
+                    <div class="temp even">--</div>
+                </div>
+            </div>
+        </div>
+        <div class="additional-action">
+            <div class="item">
+                <div class="iconset"><img id="sunup" src="./img/weather/sunup.png"></div>
+                <div class="label">MT Mọc</div>
+                <div class="value sunrise">--</div>
+            </div>
+            <div class="item">
+                <div class="iconset"><img id="sundown" src="./img/weather/sundown.png"></div>
+                <div class="label">MT Lặn</div>
+                <div class="value sunset">--</div>
+            </div>
+            <div class="item">
+                <div class="iconset"><img class="humanity" src="./img/weather/humidity.png"></div>
+                <div class="label">Độ Ẩm</div>
+                <div class="value"><span class="hudimity">--</span>%</div>
+            </div>
+            <div class="item">
+                <div class="iconset"><img id="wind" src="./img/weather/wind.png"></div>
+                <div class="label">Gió</div>
+                <div class="value"><span class="wind-speed">--</span>km/h</div>
+            </div>
+        </div>
+        <div class="interact_navigation">
+            <div class="navigation"></div>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+
+</html>
